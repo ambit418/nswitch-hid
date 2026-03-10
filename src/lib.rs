@@ -7,9 +7,11 @@
 #![warn(missing_docs)]
 
 mod button;
+mod controller;
 mod hat;
 mod stick;
 
 pub use button::Buttons;
+pub use controller::ControllerState;
 pub use hat::Hat;
 pub use stick::Stick;
