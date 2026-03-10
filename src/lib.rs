@@ -8,10 +8,12 @@
 
 mod button;
 mod controller;
+mod descriptor;
 mod hat;
 mod stick;
 
 pub use button::Buttons;
 pub use controller::ControllerState;
+pub use descriptor::HID_REPORT_DESCRIPTOR;
 pub use hat::Hat;
 pub use stick::Stick;
