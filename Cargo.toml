@@ -1,0 +1,9 @@
+[package]
+name = "nswitch-hid"
+version = "0.1.0"
+edition = "2024"
+
+[lints.clippy]
+mod_module_files = "deny"
+
+[dependencies]
