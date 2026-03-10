@@ -7,3 +7,4 @@ edition = "2024"
 mod_module_files = "deny"
 
 [dependencies]
+bitflags = "2"
