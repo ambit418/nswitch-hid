@@ -7,5 +7,9 @@
 #![warn(missing_docs)]
 
 mod button;
+mod hat;
+mod stick;
 
 pub use button::Buttons;
+pub use hat::Hat;
+pub use stick::Stick;
