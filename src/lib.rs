@@ -11,9 +11,13 @@ mod controller;
 mod descriptor;
 mod hat;
 mod stick;
+#[cfg(feature = "embassy")]
+mod usb;
 
 pub use button::Buttons;
 pub use controller::ControllerState;
 pub use descriptor::HID_REPORT_DESCRIPTOR;
 pub use hat::Hat;
 pub use stick::Stick;
+#[cfg(feature = "embassy")]
+pub use usb::create_hid;

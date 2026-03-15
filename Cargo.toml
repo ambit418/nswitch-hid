@@ -6,5 +6,10 @@ edition = "2024"
 [lints.clippy]
 mod_module_files = "deny"
 
+[features]
+default = ["embassy"]
+embassy = ["dep:embassy-usb"]
+
 [dependencies]
 bitflags = "2"
+embassy-usb = { version = "0.4", features = ["usbd-hid"], optional = true }
