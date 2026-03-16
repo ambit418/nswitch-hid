@@ -17,8 +17,8 @@ use crate::descriptor::HID_REPORT_DESCRIPTOR;
 /// Size of the HID input report in bytes.
 const INPUT_REPORT_SIZE: usize = 8;
 
-/// Size of the HID output report in bytes (not used, but required by the API).
-const OUTPUT_REPORT_SIZE: usize = 0;
+/// Size of the HID output report in bytes.
+const OUTPUT_REPORT_SIZE: usize = 8;
 
 /// Creates a [`HidReaderWriter`] configured as a Nintendo Switch controller.
 ///

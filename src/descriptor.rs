@@ -3,13 +3,18 @@
 //! This descriptor tells the USB host (Nintendo Switch) how to interpret
 //! the 8-byte input reports sent by the controller.
 
-/// HID Report Descriptor (90 bytes).
+/// HID Report Descriptor (86 bytes).
 ///
-/// Describes the input report layout:
+/// Describes the report layout:
+///
+/// **Input (8 bytes, device → host):**
 /// - 16 buttons (2 bytes)
 /// - 1 hat switch (4 bits + 4 bits padding)
 /// - 4 analog axes: LX, LY, RX, RY (1 byte each)
 /// - 1 vendor-specific byte
+///
+/// **Output (8 bytes, host → device):**
+/// - 8 vendor-specific bytes
 ///
 /// Based on the HORI Pokken Controller descriptor, compatible with
 /// Nintendo Switch v3.0.0+.
@@ -50,10 +55,14 @@ pub const HID_REPORT_DESCRIPTOR: &[u8] = &[
     0x75, 0x08,       //   Report Size (8 bits)
     0x95, 0x04,       //   Report Count (4)
     0x81, 0x02,       //   Input (Data, Variable, Absolute)
-    // --- Vendor Specific (1 byte) ---
+    // --- Vendor Specific Input (1 byte) ---
     0x06, 0x00, 0xFF, //   Usage Page (Vendor Defined)
     0x09, 0x20,       //   Usage (Vendor Usage 0x20)
     0x95, 0x01,       //   Report Count (1)
     0x81, 0x02,       //   Input (Data, Variable, Absolute)
+    // --- Vendor Specific Output (8 bytes) ---
+    0x0A, 0x21, 0x26, //   Usage (Vendor Usage 0x2621)
+    0x95, 0x08,       //   Report Count (8)
+    0x91, 0x02,       //   Output (Data, Variable, Absolute)
     0xC0,             // End Collection
 ];
