@@ -1,0 +1,7 @@
+/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/deps/embassy_net_driver_channel-0c6c41bdbc631476.d: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/fmt.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/../README.md
+
+/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/deps/libembassy_net_driver_channel-0c6c41bdbc631476.rmeta: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/fmt.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/../README.md
+
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/lib.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/fmt.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/embassy-net-driver-channel-0.3.2/src/../README.md:

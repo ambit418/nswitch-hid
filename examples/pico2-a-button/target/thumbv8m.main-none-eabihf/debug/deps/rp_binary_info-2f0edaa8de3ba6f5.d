@@ -1,0 +1,10 @@
+/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/deps/rp_binary_info-2f0edaa8de3ba6f5.d: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/consts.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/types.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/macros.rs
+
+/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/deps/librp_binary_info-2f0edaa8de3ba6f5.rlib: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/consts.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/types.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/macros.rs
+
+/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/deps/librp_binary_info-2f0edaa8de3ba6f5.rmeta: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/consts.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/types.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/macros.rs
+
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/lib.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/consts.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/types.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rp-binary-info-0.1.2/src/macros.rs:
