@@ -1,4 +1,0 @@
-cargo:rustc-link-search=/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/build/pico2-a-button-c075988a1872585a/out
-cargo:rerun-if-changed=memory.x
-cargo:rustc-link-arg-bins=--nmagic
-cargo:rustc-link-arg-bins=-Tlink.x

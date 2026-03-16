@@ -1,3 +1,0 @@
-cargo:rustc-link-search=/Users/dev/Desktop/code/switch-automation/nswitch-hid/examples/pico2-a-button/target/thumbv8m.main-none-eabihf/debug/build/rp-pac-a9a57cb53a02ed41/out
-cargo:rerun-if-changed=device.x
-cargo:rerun-if-changed=build.rs
