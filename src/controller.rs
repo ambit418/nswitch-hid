@@ -68,3 +68,80 @@ impl ControllerState {
         ]
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    // All inputs at neutral: no buttons, hat=0x0F, sticks centered at 128,
+    // vendor byte = 0x00.
+    #[test]
+    fn neutral_report() {
+        let state = ControllerState::new();
+        assert_eq!(
+            state.to_report(),
+            [0x00, 0x00, 0x0F, 128, 128, 128, 128, 0x00]
+        );
+    }
+
+    // A = bit 2 (0x0004) lands in the low byte of the LE u16.
+    #[test]
+    fn single_button() {
+        let mut state = ControllerState::new();
+        state.buttons = Buttons::A;
+        let report = state.to_report();
+        assert_eq!(report[0], 0x04);
+        assert_eq!(report[1], 0x00);
+    }
+
+    // L (0x0010) | R (0x0020) = 0x0030, all in the low byte.
+    #[test]
+    fn combined_buttons() {
+        let mut state = ControllerState::new();
+        state.buttons = Buttons::L | Buttons::R;
+        let report = state.to_report();
+        assert_eq!(report[0], 0x30);
+        assert_eq!(report[1], 0x00);
+    }
+
+    // HOME = 0x1000 — the high byte must carry the value in LE order.
+    #[test]
+    fn high_byte_button() {
+        let mut state = ControllerState::new();
+        state.buttons = Buttons::HOME;
+        let report = state.to_report();
+        assert_eq!(report[0], 0x00);
+        assert_eq!(report[1], 0x10);
+    }
+
+    // Hat::Up = 0x00, placed at byte index 2.
+    #[test]
+    fn hat_direction() {
+        let mut state = ControllerState::new();
+        state.hat = Hat::Up;
+        assert_eq!(state.to_report()[2], 0x00);
+    }
+
+    // Stick axes map to bytes 3-6: LX, LY, RX, RY.
+    #[test]
+    fn stick_axes() {
+        let mut state = ControllerState::new();
+        state.left_stick = Stick { x: 0, y: 255 };
+        state.right_stick = Stick { x: 255, y: 0 };
+        let report = state.to_report();
+        assert_eq!(report[3], 0);
+        assert_eq!(report[4], 255);
+        assert_eq!(report[5], 255);
+        assert_eq!(report[6], 0);
+    }
+
+    // Byte 7 is always 0x00 regardless of other fields.
+    #[test]
+    fn vendor_byte_always_zero() {
+        let mut state = ControllerState::new();
+        state.buttons = Buttons::all();
+        state.hat = Hat::Down;
+        state.left_stick = Stick { x: 255, y: 255 };
+        assert_eq!(state.to_report()[7], 0x00);
+    }
+}
